@@ -165,9 +165,6 @@
   .bg-amber-400 {
     background-color: var(--color-amber-400);
   }
-  .bg-red-600 {
-    background-color: var(--color-red-600);
-  }
   .text-red-600 {
     color: var(--color-red-600);
   }
