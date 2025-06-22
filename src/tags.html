@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tags</title>
+        <link rel="stylesheet" href="{{ '/css/tailwind-output.css' | url }}" />
+    </head>
+    <body
+        class="bg-gray-100 text-gray-800 font-sans leading-relaxed dark:bg-zinc-900 dark:text-gray-200"
+    >
+        <header>{% include "nav.html" %}</header>
+        <h1 class="text-red-600">Tags Page!</h1>
+        <ul>
+            {% for tag in collections %} {% if tag[0] != "all" and tag[0] !=
+            "nav" and tag[0] != "post" %}
+            <li><a href="/tags/{{ tag[0] | slug }}/">{{ tag[0] }}</a></li>
+            {% endif %} {% endfor %}
+        </ul>
+    </body>
+</html>
