@@ -14,7 +14,7 @@
         {% for post in collections.post %}
         <a href="{{ post.url | url }}">
             <p class="text-2xl">{{ post.data.title }}</p>
-            <p>Content</p>
+            <p>{{ post.data.date | date: "%d %B %Y" }}</p>
         </a>
         {% endfor %}
     </body>
