@@ -1,6 +1,6 @@
 ---
 title: Test Post
-layout: layout.html
+tags: ["test"]
 ---
 
 This is a test post
